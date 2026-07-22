@@ -1,0 +1,6 @@
+{
+  "name": "Mahalakshmi Creation",
+  "description": "Luxury Embroidery Website for Mahalakshmi Creation featuring haute couture hand and machine embroidery designs, bridal collection, international collection, interactive 360 viewer, live WhatsApp inquiry, and admin management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

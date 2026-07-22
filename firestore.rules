@@ -1,0 +1,61 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Public catalog & admin content management collections
+    match /products/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    match /categories/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    match /collections/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    match /gallery/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    match /videos/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    match /heroBanners/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    match /reviews/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    match /settings/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    // Inquiries / Contact Messages
+    match /inquiries/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    // Orders & Order Trash Audit
+    match /orders/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    match /order_trash/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    match /order_audit_logs/{document=**} {
+      allow read, write, create, update, delete: if true;
+    }
+
+    // Customer Profiles
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+  }
+}
